@@ -1,0 +1,70 @@
+html, body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dot, .active, .wrong, .right {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    margin: 2.5px;
+    border-radius: 50%;
+}
+
+.active, .wrong, .right, .dot:hover {
+    margin: 0px;
+    width: 30px;
+    height: 30px;;
+}
+
+.active {
+    background-color: orange;
+}
+
+.wrong {
+    background-color: red;
+}
+
+.right {
+    background-color: greenyellow;
+}
+
+.board {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.lines {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lock {
+    display: grid;
+    grid-gap: 50px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: black;
+    z-index: 3;
+}
+
+#wrapper {
+    position: absolute;
+}
+
+#board svg {
+    width: 1000px;
+    height: 1000px;
+    overflow: visible;
+}

@@ -1,0 +1,77 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pattern {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.shots {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-gap: 10px;
+  margin: 10px auto;
+  width: 540px;
+  margin-top: 45px;
+}
+
+.shots > svg {
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade {
+    from {
+      opacity: 0;
+      transform: translate(-30px, 0px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0px, 0px);
+    }
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/* MENU STUFF */
+.splitLeft {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 130px;
+  overflow-x: hidden;
+  padding-top: 20px;
+  outline: 2px solid white;
+  left: 0;
+}
+
+
+/* Control the right side */
+.splitRight {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  top: 130px;
+  overflow-x: hidden;
+  padding-top: 20px;
+  outline: 2px solid white;
+  right: 25%;
+}
+
+.splitRightRight {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  top: 130px;
+  overflow-x: hidden;
+  padding-top: 20px;
+  outline: 2px solid white;
+  right: 0%;
+}
